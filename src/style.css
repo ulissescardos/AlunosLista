@@ -4,6 +4,11 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+ul {
+    text-decoration: none;
+}
+
+
 nav {
 
     margin: 5px 5px 5px 5px;
@@ -11,6 +16,17 @@ nav {
     float: left;
 
 }
+
+nav ul {
+    display: block;
+}
+
+
+nav ul li {
+    padding: 1rem;
+}
+
+
 
 .navbar-brand a h2 {
     text-decoration: none;
