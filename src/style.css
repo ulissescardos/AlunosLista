@@ -46,5 +46,17 @@ form {
     margin-top: 10px;
     display: grid;
     gap: 10px 20px;
-    grid-template-columns: 400px 300px;
+    grid-template-columns: 300px 300px;
+}
+
+#name-input {
+    grid-column: 1/ span 2;
+}
+
+#address-input {
+    grid-column: 1/ span 2;
+}
+
+#email-input {
+    grid-column: 1/ span 2;
 }
