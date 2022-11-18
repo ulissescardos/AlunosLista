@@ -12,8 +12,10 @@ nav {
     margin: 5px 5px 5px 5px;
     float: left;
 
-    width: 25%;
-    height: 100%;
+    width: 15%;
+    height: 100vh;
+
+    position: fixed;
 }
 
 nav ul {
@@ -31,4 +33,18 @@ nav ul li {
 
     font-size: x-large;
     font-weight: 500;
+}
+
+main{
+
+    margin: 5px 5px 5px 5px;
+}
+
+
+form {
+
+    margin-top: 10px;
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: 400px 300px;
 }
