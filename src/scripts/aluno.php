@@ -1,36 +1,22 @@
 <?php
 
-$current_dir = getcwd();
+class Student{
 
-echo "<p> $current_dir </p>";
+    public $name;
+    public $age;
+    public $ra;
+    public $sex;
+    public $phone;
+    public $address;
+    public $email;
+}
+
+$student = new Student();
+
 
 foreach($_POST as $key => $value){
 
     $val = htmlspecialchars($value);
 
-    echo "<p> $key => $val </p>";
-
+    $student->$key = $val;
 }
-
-echo `whoami`;
-echo "<div><div>";
-
-$path = dirname(__FILE__) . "/" . "lista.txt";
-
-if(!file_exists($path)){
-    touch($path);
-}
-
-$f = fopen($path, "a+") or die("Não foi possível abrir o arquivo! :(");
-
-foreach($_POST as $key => $value){
-
-    $val = htmlspecialchars($value);
-
-    fwrite($f, "$key: $val ");
-}
-
-fclose($f);
-
-
-
