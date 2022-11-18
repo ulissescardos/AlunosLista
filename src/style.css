@@ -3,3 +3,19 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
+nav {
+
+    margin: 5px 5px 5px 5px;
+
+    float: left;
+
+}
+
+.navbar-brand a h2 {
+    text-decoration: none;
+    color: black;
+
+    font-size: x-large;
+    font-weight: 500;
+}
