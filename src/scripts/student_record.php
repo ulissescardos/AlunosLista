@@ -15,7 +15,13 @@ $path = dirname(__FILE__) . "/students.txt";
 
 try {
     
-    $file = fopen($path, "a+") or die("Não consegui abrir o arquivo");
+    $file = fopen($path, "a+");
+
+    $serialized_student = serialize($student);
+
+    fwrite($serialized_student);
+
+    fclose($file);
 
     echo "
     <!DOCTYPE html>
