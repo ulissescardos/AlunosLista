@@ -19,7 +19,7 @@ try {
 
     $serialized_student = serialize($student);
 
-    fwrite($serialized_student);
+    fwrite($file, $serialized_student . "\n");
 
     fclose($file);
 
@@ -76,8 +76,6 @@ try {
     var_dump($student);
 
 } catch (Exception $e) {
-    
-    $file = fopen($path, "a+") or die("Não consegui abrir o arquivo");
 
     echo "
     <!DOCTYPE html>
