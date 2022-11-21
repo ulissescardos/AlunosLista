@@ -49,7 +49,7 @@ try {
                 </li>
 
                 <li>
-                    <a href=''>
+                    <a href='scripts/show_students.php'>
                         Alunos Cadastrados
                     </a>
                 </li>
@@ -103,7 +103,7 @@ try {
                 </li>
 
                 <li>
-                    <a href=''>
+                    <a href='scripts/show_students.php'>
                         Alunos Cadastrados
                     </a>
                 </li>
