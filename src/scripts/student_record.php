@@ -2,8 +2,9 @@
 
 require "./aluno.php";
 
-$student = new Student();
+$students = array();
 
+$student = new Student();
 
 foreach($_POST as $key => $value){
 
@@ -11,6 +12,8 @@ foreach($_POST as $key => $value){
 
     $student->$key = $val;
 }
+
+$students += $student;
 
 echo "
 <!DOCTYPE html>
