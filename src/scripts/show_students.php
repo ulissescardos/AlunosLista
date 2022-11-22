@@ -28,6 +28,29 @@ try {
 }
 
 
+foreach($students as $key => $value){
+
+    if($students[$key] == false){
+
+        echo "<pre></pre>";
+
+        var_dump($students[$key]);
+
+        unset($students[$key]);
+    }
+
+}
+
+echo "<h3> Before sort </h3>";
+
+echo "<pre></pre>";
+
+var_dump($students);
+
+usort($students, [Student::class, 'sort_instances']);
+
+echo "<h3> After sort </h3>";
+
 echo "<pre></pre>";
 
 var_dump($students);
