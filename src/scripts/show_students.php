@@ -64,14 +64,6 @@ try {
 
         $s = preg_replace('/\s+/', ' ', trim($line));
 
-        echo "<h2> show line </h2>";
-
-        echo "<code>" ;
-
-        var_dump($s);
-
-        echo "</code>";
-
         $students[] = unserialize($s);
     }
 
@@ -84,32 +76,12 @@ foreach($students as $key => $value){
 
     if($students[$key] == false){
 
-        echo "<h2> Before remove bool val </h2>";
-
-        echo "<code>" ;
-        var_dump($students[$key]);
-        echo "<br/>";
-        var_dump($val);
-        echo "</code>" ;
-
         unset($students[$key]);
     }
 
 }
 
-echo "<h3> Before sort </h3>";
-
-echo "<code>" ;
-var_dump($students);
-echo "</code>" ;
-
 usort($students, [Student::class, 'sort_instances']);
-
-echo "<h3> After sort </h3>";
-
-echo "<code>" ;
-var_dump($students);
-echo "</code>" ;
 ?>
 
     <table class="table">
