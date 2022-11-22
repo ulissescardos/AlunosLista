@@ -1,5 +1,7 @@
 <?php
 
+include "./student.php";
+
 $path = dirname(__FILE__) . "/students.txt";
 
 $students = array();
@@ -14,11 +16,11 @@ try {
 
         echo "<pre></pre>";
 
-        $s = explode("\n", $line);
+        $s = preg_replace('/\s+/', ' ', trim($line));
 
         var_dump($s);
 
-        $students[] = unserialize($s[0]);
+        $students[] = unserialize($s);
     }
 
 } catch (Exception $e) {
@@ -29,10 +31,3 @@ try {
 echo "<pre></pre>";
 
 var_dump($students);
-
-for($i = 0; $i < count($students); $i++){
-
-    echo "<p>${gettype($students[$i])}</p>";
-
-}
-
