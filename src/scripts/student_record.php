@@ -73,9 +73,6 @@ try {
     </html>
     ";
 
-    var_dump($student);
-    var_dump($serialized_student);
-
 } catch (Exception $e) {
 
     echo "
@@ -127,8 +124,4 @@ try {
     </body>
     </html>
     ";
-
-    var_dump($student);
-
-
 }
