@@ -89,8 +89,8 @@ usort($students, [Student::class, 'sort_instances']);
         <tr>
             <th>RA </th>
             <th>Nome </th>
-            <th>sexo </th>
             <th>idade </th>
+            <th>sexo </th>
             <th>telefone </th>
             <th>endereço </th>
             <th>email </th>
