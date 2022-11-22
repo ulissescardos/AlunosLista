@@ -9,4 +9,8 @@ class Student{
     public $phone;
     public $address;
     public $email;
+
+
+    function __construct(){}
+
 }
