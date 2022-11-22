@@ -74,6 +74,7 @@ try {
     ";
 
     var_dump($student);
+    var_dump($serialized_student);
 
 } catch (Exception $e) {
 
